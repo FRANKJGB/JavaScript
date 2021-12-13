@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TAREA EN CLASE</title>
+</head>
+<body>
+	<h1>Tarea En Clase</h1>
+	<hr>
+	<h2>Promedio de las Clases</h2>
+
+	Clase 1 <input type="text" name="v1" id="v1" style="background-color: orangered;"><br>
+	Clase 2 <input type="text" name="v2" id="v2" style="background-color: skyblue;"><br>
+	Clase 3 <input type="text" name="v3" id="v3" style="background-color: lightyellow;"><br>
+	Clase 4 <input type="text" name="v4" id="v4" style="background-color: dimgray;"><br><br>
+	<button onclick="evaluar();">Promediar</button><br>
+
+	<p id="res"></p>
+	<p>Promedio : <input type="text" name="res1" id="res1"></p>
+
+	<script type="text/javascript">
+
+		function evaluar(){
+			let v1= document.getElementById('v1').value;
+			let v2= document.getElementById('v2').value;
+			let v3= document.getElementById('v3').value;
+			let v4= document.getElementById('v4').value;
+			let vv1= parseInt(v1,10);
+			let vv2= parseInt(v2,10);
+			let vv3= parseInt(v3,10);
+			let vv4= parseInt(v4,10);
+			let res="";
+			let promediar= (vv1+vv2+vv3+vv4)/4;
+			alert("promedio: "+promediar)
+
+			if (promediar>=4) {
+				res="APROBASTE EL AÑO";
+			}else {
+				res="REPROBASTE EL AÑO"
+			}
+			document.getElementById('res1').value=res;
+
+		}
+	
+
+	</script>
+</body>
+</html>
