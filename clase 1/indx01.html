@@ -1,0 +1,29 @@
+<title></title>
+</head>
+<body>
+	<h1>TAREA EN CLASE</h1>
+	<br>
+	<p id="demo" name="" class="">TAREA EN CLASE</p><br>
+	<button onclick="document.getElementById('demo').innerHTML='tarea en clase';">cambie a minuscula</button><br><br><br>
+
+<br>
+valor 01: <input type="Texto" name="v1" id="v1"><br>
+valor 02: <input type="Texto" name="v2" id="v2"><br>
+resultado: <input type="Texto" name="res" id="res"><br>
+<button onclick="calcular();">Calculando</button>
+<script type="text/javascript">
+	
+	function calcular(){
+		let v1=document.getElementById('v1').value;
+		let v2=document.getElementById('v2').value;
+		let vv1=parseInt(v1,10);
+		let vv2=parseInt(v2,10);
+		let res=vv1+vv2;
+		document.getElementById('res').value=res
+	}
+
+</script>
+
+
+
+</body>
