@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<p id="texto"></p>
+
+<script type="text/javascript">
+	var texto=""; //aqui declaro variable comentario
+	var num=12;
+	if (num>10) {texto="el numero es: "+num+" en general";
+	}else if (num>5) {
+		texto="el numero es: "+num+" cumple el segundo criterio"
+	}else{
+		texto="el numero es: "+num+" ninguno de los criterios"
+	}
+	
+	document.getElementById('texto').innerHTML=texto;
+
+</script>
+
+
+</body>
+</html>
