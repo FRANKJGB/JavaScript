@@ -1,0 +1,99 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">
+    *{
+        background-color: #F1FCD2;
+    }   
+    
+    </style>
+</head>
+<body>
+
+  <h2>OPERACIONES MATEMATICAS</h2>
+        Radio: <input type="text" name="n1" id="v1"><br>
+        <p>resultado: <input type="text" name="res" id="res"></p><br>
+
+        <button onclick="calcular();">DIAMETRO</button>
+        <button onclick="calcular1();">PERIMETRO</button>
+        <button onclick="calcular2();">AREA</button>
+
+    <script type="text/javascript">
+        function calcular(){
+            let v1=document.getElementById('v1').value;
+            let vv1=parseInt(v1,10);
+            let res=2vv1;
+            document.getElementById('res').value=res;
+        }
+        function calcular1(){
+            let v1=document.getElementById('v1').value;
+            let vv1=parseInt(v1,10);
+            let res=2Math.PI()vv1;
+            document.getElementById('res').value=res;
+        }
+        function calcular2(){
+            let v1=document.getElementById('v1').value;
+            let vv1=parseInt(v1,10);
+            let res=Math.PI(vv1)²;
+            document.getElementById('res').value=res;
+        }
+    </script>
+
+</body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>EJEMPLO JS</h1>
+
+    <br>
+
+    <p id="demo">TEXTO</p><br>
+
+
+    <button onclick="document.getElementById('demo').innerHTML='Hola Mundo..!!'; ">cambiar</button>
+    <br><br>
+
+    <!--DISTINTAS FORMAS DE LLAMAR UN ELEMENTO
+
+        <button onclick="document.getElementById('demo').innerHTML='Hola Mundo..!!';">cambiar</button>
+
+        <button onclick="document.getElementByName('demo')[0].innerHTML='Hola Mundo..!!';">cambiar</button>
+
+        <button onclick="document.getElementByClassName('demo')[0].innerHTML='Hola Mundo..!!';">cambiar</button>
+
+        <button onclick="document.getElementByTagName('demo')[0].innerHTML='Hola Mundo..!!';">cambiar</button>
+    -->
+
+    <br>
+    valor 01: <input type="text" name="v1" id="v1"><br>
+    valor 02: <input type="text" name="v2" id="v2"><br>
+    resultado: <input type="text" name="res" id="res"><br><br>
+    <button onclick="calcular();">calcular</button>
+    <script type="text/javascript">
+
+        function calcular(){
+            Let v1=document.getElementById('v1').value;
+            Let v2=document.getElementById('v2').value;
+            Let vv1=parseInt(v1,10);
+            Let vv2=parseInt(v2,10);
+            Let res=vv1+vv2;
+            document.getElementById('res').value=res;
+        }
+
+        
+</script>
+
+
+
+</body>
+</html>
