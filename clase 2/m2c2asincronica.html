@@ -1,0 +1,46 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ASINCRONICA M2C2</title>
+
+
+</head>
+<body>
+<h1> TAREA ASINCRONICA</h1>
+<hr>
+Estatura <input style="background-color: lightgrey;" type="text" name="x1" id="e1" title="Estatura en cm" autofocus><br><br>
+Peso.......<input style="background-color: lightgrey;" type="text" name="x2" id="e2" title="Peso en kilos"><br><br>
+Resultado<input style="background-color: lightgrey;" type="text" name="x3" id="res1"><br><br>
+<button onclick="calcular();"><b>Indice de Masa Muscular</b></button><br><hr>
+
+<p id="res"></p>
+<p>Resultado: <input style="background-color: lightgreen;" type="text" name="x4" id="res2"></p>
+
+<script type="text/javascript">
+
+	function calcular(){
+		let v1= document.getElementById('e1').value;
+		let v2= document.getElementById('e2').value;
+		let vv1= parseInt(v1,10);
+		let vv2= parseInt(v2,10);
+		let res="";
+		let imc= (vv2/vv1);
+		alert("Resultado:" +imc);
+
+		if (imc<=18) {
+			res="Peso inferior al normal";
+			}
+
+
+		document.getElementById('res1').value=imc;
+		document.getElementById('res2').value=res;
+	}
+
+
+</script>
+
+
+</body>
+</html>
