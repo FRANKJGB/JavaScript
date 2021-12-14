@@ -10,10 +10,10 @@
 	<hr>
 	<h2>Promedio de las Clases</h2>
 
-	Clase 1 <input type="text" name="v1" id="v1" style="background-color: orangered;"><br>
-	Clase 2 <input type="text" name="v2" id="v2" style="background-color: skyblue;"><br>
-	Clase 3 <input type="text" name="v3" id="v3" style="background-color: lightyellow;"><br>
-	Clase 4 <input type="text" name="v4" id="v4" style="background-color: dimgray;"><br><br>
+	Clase 1 <input type="text" name="t1" id="v1" style="background-color: orangered;"><br>
+	Clase 2 <input type="text" name="t2" id="v2" style="background-color: skyblue;"><br>
+	Clase 3 <input type="text" name="t3" id="v3" style="background-color: lightyellow;"><br>
+	Clase 4 <input type="text" name="t4" id="v4" style="background-color: dimgray;"><br><br>
 	<button onclick="evaluar();">Promediar</button><br>
 
 	<p id="res"></p>
@@ -32,7 +32,7 @@
 			let vv4= parseInt(v4,10);
 			let res="";
 			let promediar= (vv1+vv2+vv3+vv4)/4;
-			alert("promedio: "+promediar)
+			alert("Promedio: "+promediar)
 
 			if (promediar>=4) {
 				res="APROBASTE EL AÑO";
